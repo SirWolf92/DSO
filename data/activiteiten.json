@@ -1,0 +1,149 @@
+{
+  "activiteiten": [
+    {
+      "code": "bouw_omgevingsplan",
+      "naam": "Bouwactiviteit (omgevingsplanactiviteit bouwen)",
+      "toelichting": "Het bouwen van een bouwwerk dat getoetst wordt aan het omgevingsplan van de gemeente (ruimtelijke inpassing, uiterlijk, gebruik).",
+      "vergunningplichtig": true,
+      "complexiteit": "midden",
+      "verplichte_bijlagen": [
+        "situatietekening",
+        "plattegronden_gevels_doorsneden",
+        "foto_bestaande_situatie"
+      ],
+      "aanbevolen_bijlagen": [
+        "ruimtelijke_onderbouwing",
+        "welstandsadvies"
+      ],
+      "richtlijnen_nationaal": ["ow_algemeen", "bbl_bouwtechniek"],
+      "richtlijnen_lokaal": ["omgevingsplan", "welstand"]
+    },
+    {
+      "code": "bouw_technisch",
+      "naam": "Bouwactiviteit (technische bouwactiviteit, Bbl)",
+      "toelichting": "De technische kant van het bouwen: constructie, brandveiligheid, energie en gezondheid getoetst aan het Besluit bouwwerken leefomgeving (Bbl).",
+      "vergunningplichtig": true,
+      "complexiteit": "hoog",
+      "verplichte_bijlagen": [
+        "constructieberekening",
+        "constructietekening",
+        "plattegronden_gevels_doorsneden",
+        "bbl_toets"
+      ],
+      "aanbevolen_bijlagen": [
+        "energieprestatie_beng",
+        "ventilatieberekening"
+      ],
+      "richtlijnen_nationaal": ["bbl_bouwtechniek", "bbl_brandveiligheid", "bbl_energie"],
+      "richtlijnen_lokaal": []
+    },
+    {
+      "code": "kappen",
+      "naam": "Kappen van een houtopstand (vellen)",
+      "toelichting": "Het vellen of doen vellen van een boom of houtopstand, geregeld via het omgevingsplan / de gemeentelijke regels.",
+      "vergunningplichtig": true,
+      "complexiteit": "laag",
+      "verplichte_bijlagen": [
+        "situatietekening",
+        "foto_boom"
+      ],
+      "aanbevolen_bijlagen": [
+        "boomdeskundig_rapport",
+        "herplantplan"
+      ],
+      "richtlijnen_nationaal": ["ow_algemeen", "natuur_soortenbescherming"],
+      "richtlijnen_lokaal": ["omgevingsplan_groen"]
+    },
+    {
+      "code": "uitrit",
+      "naam": "Aanleg of wijziging van een uitweg/inrit",
+      "toelichting": "Het maken van een nieuwe uitweg op de openbare weg of het veranderen van een bestaande uitweg.",
+      "vergunningplichtig": true,
+      "complexiteit": "laag",
+      "verplichte_bijlagen": [
+        "situatietekening",
+        "foto_bestaande_situatie"
+      ],
+      "aanbevolen_bijlagen": [],
+      "richtlijnen_nationaal": ["ow_algemeen"],
+      "richtlijnen_lokaal": ["omgevingsplan", "verkeersveiligheid"]
+    },
+    {
+      "code": "monument",
+      "naam": "Wijziging van een rijks- of gemeentelijk monument",
+      "toelichting": "Het wijzigen, restaureren of (deels) slopen van een beschermd monument.",
+      "vergunningplichtig": true,
+      "complexiteit": "hoog",
+      "verplichte_bijlagen": [
+        "situatietekening",
+        "plattegronden_gevels_doorsneden",
+        "foto_bestaande_situatie",
+        "cultuurhistorische_onderbouwing"
+      ],
+      "aanbevolen_bijlagen": [
+        "bouwhistorisch_onderzoek",
+        "materiaalstaat"
+      ],
+      "richtlijnen_nationaal": ["ow_algemeen", "erfgoed_monumenten"],
+      "richtlijnen_lokaal": ["erfgoedverordening"]
+    },
+    {
+      "code": "milieu",
+      "naam": "Milieubelastende activiteit (Bal)",
+      "toelichting": "Een activiteit met mogelijke gevolgen voor het milieu, getoetst aan het Besluit activiteiten leefomgeving (Bal).",
+      "vergunningplichtig": true,
+      "complexiteit": "hoog",
+      "verplichte_bijlagen": [
+        "situatietekening",
+        "milieu_onderbouwing",
+        "bedrijfsbeschrijving"
+      ],
+      "aanbevolen_bijlagen": [
+        "geluidsrapport",
+        "bodemonderzoek",
+        "stikstofberekening_aerius"
+      ],
+      "richtlijnen_nationaal": ["bal_milieu", "natuur_stikstof"],
+      "richtlijnen_lokaal": ["omgevingsplan_milieu"]
+    },
+    {
+      "code": "reclame",
+      "naam": "Plaatsen van een handelsreclame",
+      "toelichting": "Het aanbrengen van reclame zichtbaar vanaf de openbare weg.",
+      "vergunningplichtig": true,
+      "complexiteit": "laag",
+      "verplichte_bijlagen": [
+        "situatietekening",
+        "ontwerp_reclame_met_maatvoering",
+        "foto_bestaande_situatie"
+      ],
+      "aanbevolen_bijlagen": ["welstandsadvies"],
+      "richtlijnen_nationaal": ["ow_algemeen"],
+      "richtlijnen_lokaal": ["welstand", "reclamebeleid"]
+    }
+  ],
+  "bijlage_labels": {
+    "situatietekening": "Situatietekening (schaal 1:500 of 1:1000)",
+    "plattegronden_gevels_doorsneden": "Plattegronden, gevels en doorsneden",
+    "foto_bestaande_situatie": "Foto's van de bestaande situatie",
+    "foto_boom": "Foto's van de boom/houtopstand",
+    "constructieberekening": "Constructieberekening",
+    "constructietekening": "Constructietekening",
+    "bbl_toets": "Bbl-toets (bouwbesluittoets nieuwe stijl)",
+    "ruimtelijke_onderbouwing": "Ruimtelijke onderbouwing",
+    "welstandsadvies": "Welstandsadvies / beeldkwaliteitstoets",
+    "energieprestatie_beng": "Energieprestatieberekening (BENG)",
+    "ventilatieberekening": "Ventilatieberekening",
+    "boomdeskundig_rapport": "Boomdeskundig rapport (conditie/veiligheid)",
+    "herplantplan": "Herplantplan",
+    "cultuurhistorische_onderbouwing": "Cultuurhistorische onderbouwing",
+    "bouwhistorisch_onderzoek": "Bouwhistorisch onderzoek",
+    "materiaalstaat": "Materiaal- en kleurenstaat",
+    "milieu_onderbouwing": "Milieuonderbouwing",
+    "bedrijfsbeschrijving": "Bedrijfsbeschrijving",
+    "geluidsrapport": "Akoestisch onderzoek (geluid)",
+    "bodemonderzoek": "Bodemonderzoek",
+    "stikstofberekening_aerius": "Stikstofberekening (AERIUS)",
+    "ontwerp_reclame_met_maatvoering": "Ontwerptekening reclame met maatvoering"
+  }
+}

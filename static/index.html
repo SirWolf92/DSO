@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DSO Aanvraag Checker</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="wrap">
+        <div class="brand">
+          <span class="logo">DSO</span>
+          <div>
+            <h1>Aanvraag Checker</h1>
+            <p class="tagline">
+              Controleer je Omgevingswet-aanvraag met AI, historische data en
+              nationale &amp; lokale richtlijnen — vóór je indient.
+            </p>
+          </div>
+        </div>
+        <div id="ai-status" class="ai-status" title="Status van de AI-analyse"></div>
+      </div>
+    </header>
+
+    <main class="wrap layout">
+      <!-- FORMULIER -->
+      <form id="aanvraag-form" class="card form">
+        <h2>1. Aanvrager</h2>
+        <div class="grid-2">
+          <label>
+            Naam
+            <input type="text" id="aanvrager-naam" placeholder="Voor- en achternaam of bedrijfsnaam" />
+          </label>
+          <label>
+            Type aanvrager
+            <select id="aanvrager-type">
+              <option value="particulier">Particulier</option>
+              <option value="bedrijf">Bedrijf</option>
+            </select>
+          </label>
+        </div>
+        <label class="kvk-veld hidden" id="kvk-wrap">
+          KvK-nummer
+          <input type="text" id="aanvrager-kvk" placeholder="8 cijfers" />
+        </label>
+
+        <h2>2. Locatie</h2>
+        <div class="grid-2">
+          <label>
+            Adres
+            <input type="text" id="loc-adres" placeholder="Straat en huisnummer" />
+          </label>
+          <label>
+            Postcode
+            <input type="text" id="loc-postcode" placeholder="1234 AB" />
+          </label>
+        </div>
+        <div class="grid-2">
+          <label>
+            Gemeente
+            <select id="loc-gemeente"></select>
+          </label>
+          <label>
+            Kadastrale aanduiding <span class="optioneel">(optioneel)</span>
+            <input type="text" id="loc-kadaster" placeholder="bv. AMS00 A 1234" />
+          </label>
+        </div>
+
+        <h2>3. Activiteiten</h2>
+        <p class="hint">Kies wat je wilt gaan doen. De vereiste bijlagen passen zich aan.</p>
+        <div id="activiteiten-lijst" class="check-lijst"></div>
+
+        <h2>4. Werkzaamheden</h2>
+        <label>
+          Omschrijving
+          <textarea id="omschrijving" rows="5"
+            placeholder="Beschrijf concreet wat, waar en hoe je gaat (ver)bouwen, met materialen en afmetingen."></textarea>
+        </label>
+        <div class="grid-2">
+          <label>
+            Geschatte bouwkosten (€)
+            <input type="number" id="bouwkosten" min="0" step="100" placeholder="0" />
+          </label>
+          <label>
+            Geplande startdatum <span class="optioneel">(optioneel)</span>
+            <input type="date" id="startdatum" />
+          </label>
+        </div>
+        <label class="checkbox-rij">
+          <input type="checkbox" id="vooroverleg" />
+          <span>Er is vooroverleg met de gemeente geweest</span>
+        </label>
+
+        <h2>5. Bijlagen</h2>
+        <p class="hint">Vink aan welke documenten je hebt klaarliggen.</p>
+        <div id="bijlagen-lijst" class="check-lijst">
+          <p class="leeg">Kies eerst een of meer activiteiten.</p>
+        </div>
+
+        <div class="acties">
+          <button type="submit" id="check-btn" class="primary">Controleer aanvraag</button>
+          <button type="button" id="voorbeeld-btn" class="secundair">Vul voorbeeld in</button>
+        </div>
+      </form>
+
+      <!-- RESULTAAT -->
+      <section id="resultaat" class="card resultaat leeg-staat">
+        <div class="placeholder">
+          <div class="placeholder-icoon">✓</div>
+          <h2>Klaar om te controleren</h2>
+          <p>
+            Vul de aanvraag in en klik op <strong>Controleer aanvraag</strong>.
+            Je krijgt een ingeschatte kans op acceptatie, aandachtspunten en
+            concrete tips om je aanvraag te verbeteren.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="wrap voet">
+      <p>
+        Demo-applicatie. Gebruikt voorbeeldrichtlijnen en -historie; geen officieel
+        advies van de overheid. Controleer altijd het
+        <a href="https://omgevingswet.overheid.nl/" target="_blank" rel="noopener">Omgevingsloket</a>.
+      </p>
+    </footer>
+
+    <script src="/static/app.js"></script>
+  </body>
+</html>

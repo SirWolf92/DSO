@@ -1,0 +1,116 @@
+{
+  "bron": "Lokale richtlijnen (omgevingsplan en gemeentelijk beleid)",
+  "toelichting": "Per gemeente kunnen extra regels en beleidsregels gelden. Onderstaande set is een voorbeeldmodel met realistische accenten per gemeente.",
+  "gemeenten": {
+    "Amsterdam": {
+      "accent": "Dichtbebouwd stedelijk gebied; strenge welstand en parkeernormen.",
+      "richtlijnen": {
+        "omgevingsplan": [
+          "Hoogtebeperkingen en rooilijnen zijn strikt; afwijken vereist een goede ruimtelijke onderbouwing.",
+          "Functiewijziging naar wonen vraagt aandacht voor geluid en bezonning."
+        ],
+        "welstand": [
+          "Gebouwen in beschermd stadsgezicht moeten passen bij het historische karakter.",
+          "Materiaalgebruik (baksteen, kozijnindeling) wordt streng beoordeeld."
+        ],
+        "omgevingsplan_groen": [
+          "Bomen vanaf een bepaalde stamdiameter zijn beschermd; herplant is vaak verplicht."
+        ],
+        "verkeersveiligheid": [
+          "Nieuwe uitritten in drukke straten worden terughoudend toegestaan."
+        ],
+        "reclamebeleid": [
+          "Lichtreclame in de binnenstad is aan strikte regels gebonden."
+        ],
+        "erfgoedverordening": [
+          "Veel panden vallen onder beschermd stadsgezicht, ook zonder monumentstatus."
+        ],
+        "omgevingsplan_milieu": [
+          "Strenge geluidnormen vanwege functiemenging wonen/bedrijven."
+        ]
+      }
+    },
+    "Rotterdam": {
+      "accent": "Ruimte voor hoogbouw en herontwikkeling; havengebied met milieuruimte.",
+      "richtlijnen": {
+        "omgevingsplan": [
+          "In ontwikkelzones is meer bouwvolume mogelijk; buiten die zones gelden reguliere maten.",
+          "Aandacht voor klimaatadaptatie (waterberging op eigen terrein)."
+        ],
+        "welstand": [
+          "Welstandsvrije gebieden bestaan; controleer of welstand van toepassing is.",
+          "In de binnenstad geldt wel een beeldkwaliteitskader."
+        ],
+        "omgevingsplan_groen": [
+          "Herplantplicht bij kap van waardevolle bomen."
+        ],
+        "verkeersveiligheid": [
+          "Uitritten moeten voldoende zicht en ruimte bieden."
+        ],
+        "reclamebeleid": [
+          "Reclame langs hoofdroutes aan nadere eisen gebonden."
+        ],
+        "erfgoedverordening": [
+          "Wederopbouwarchitectuur kan beschermd zijn."
+        ],
+        "omgevingsplan_milieu": [
+          "In/nabij het havengebied is milieuruimte beschikbaar maar met monitoring."
+        ]
+      }
+    },
+    "Utrecht": {
+      "accent": "Groei rond stationsgebied; nadruk op duurzaamheid en groen.",
+      "richtlijnen": {
+        "omgevingsplan": [
+          "Hoge ambities voor duurzaamheid; energieneutraal bouwen wordt aangemoedigd.",
+          "Parkeernormen sturen op fiets en deelmobiliteit."
+        ],
+        "welstand": [
+          "Beschermd stadsgezicht in de binnenstad met strenge toetsing."
+        ],
+        "omgevingsplan_groen": [
+          "Groencompensatie verplicht bij verwijderen van groen."
+        ],
+        "verkeersveiligheid": [
+          "Terughoudend met nieuwe autoritten in 30 km-zones."
+        ],
+        "reclamebeleid": [
+          "Sober reclamebeleid in woonwijken."
+        ],
+        "erfgoedverordening": [
+          "Werfkelders en historische structuren zijn beschermd."
+        ],
+        "omgevingsplan_milieu": [
+          "Aandacht voor luchtkwaliteit rond drukke wegen."
+        ]
+      }
+    },
+    "Overige gemeente": {
+      "accent": "Algemeen model voor gemeenten zonder specifiek profiel.",
+      "richtlijnen": {
+        "omgevingsplan": [
+          "Toets aan de bouw- en gebruiksregels van het lokale omgevingsplan.",
+          "Controleer of de activiteit binnen de toegestane functie en maatvoering past."
+        ],
+        "welstand": [
+          "Controleer of er een welstandsnota/beeldkwaliteitskader geldt."
+        ],
+        "omgevingsplan_groen": [
+          "Controleer de lokale bomenregeling en eventuele herplantplicht."
+        ],
+        "verkeersveiligheid": [
+          "Uitwegen moeten verkeersveilig worden uitgevoerd."
+        ],
+        "reclamebeleid": [
+          "Controleer het lokale reclamebeleid."
+        ],
+        "erfgoedverordening": [
+          "Controleer of het pand beschermd is."
+        ],
+        "omgevingsplan_milieu": [
+          "Toets aan lokale milieuregels in het omgevingsplan."
+        ]
+      }
+    }
+  }
+}

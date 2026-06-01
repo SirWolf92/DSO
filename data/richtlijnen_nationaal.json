@@ -1,0 +1,113 @@
+{
+  "bron": "Nationale richtlijnen (Omgevingswet en uitvoeringsbesluiten)",
+  "laatst_bijgewerkt": "2026-01-01",
+  "richtlijnen": {
+    "ow_algemeen": {
+      "titel": "Omgevingswet - algemene aanvraagvereisten",
+      "wettelijke_basis": "Omgevingswet, Omgevingsregeling",
+      "kernpunten": [
+        "De aanvraag moet de exacte locatie bevatten (adres en/of kadastrale aanduiding).",
+        "Beschrijf de activiteit en de werkzaamheden volledig en concreet.",
+        "Voeg alle indieningsvereisten toe die bij de gekozen activiteit horen.",
+        "Controleer eerst via de Omgevingscheck of de activiteit vergunningplichtig of meldingplichtig is.",
+        "Geef aan of er sprake is van samenloop met andere activiteiten (één aanvraag voor meerdere activiteiten)."
+      ],
+      "veelgemaakte_fouten": [
+        "Onvolledige locatiegegevens.",
+        "Te summiere omschrijving van de werkzaamheden.",
+        "Verkeerde activiteit gekozen waardoor verkeerde indieningsvereisten gelden."
+      ]
+    },
+    "bbl_bouwtechniek": {
+      "titel": "Besluit bouwwerken leefomgeving (Bbl) - constructieve veiligheid",
+      "wettelijke_basis": "Bbl hoofdstuk 4 en 5",
+      "kernpunten": [
+        "Constructieve veiligheid moet met berekeningen worden aangetoond (NEN-normen).",
+        "Lever een constructieberekening en -tekening aan voor dragende onderdelen.",
+        "De gevolgklasse (CC1/Gevolgklasse 1) bepaalt of een onafhankelijke kwaliteitsborger nodig is (Wkb).",
+        "Toets aan eisen voor nieuwbouw of verbouw afhankelijk van het type werk."
+      ],
+      "veelgemaakte_fouten": [
+        "Ontbrekende of onvolledige constructieberekening.",
+        "Geen rekening gehouden met de Wet kwaliteitsborging (Wkb) bij gevolgklasse 1.",
+        "Verouderde of niet-toepasselijke NEN-normen gebruikt."
+      ]
+    },
+    "bbl_brandveiligheid": {
+      "titel": "Besluit bouwwerken leefomgeving (Bbl) - brandveiligheid",
+      "wettelijke_basis": "Bbl hoofdstuk 4 en 5",
+      "kernpunten": [
+        "Toon vluchtroutes, brandcompartimentering en WBDBO-eisen aan.",
+        "Bij gebruiksfuncties met veel personen gelden aanvullende eisen.",
+        "Lever een brandveiligheidsconcept aan bij complexere gebouwen."
+      ],
+      "veelgemaakte_fouten": [
+        "Geen onderbouwing van brandcompartimentering.",
+        "Vluchtroutes niet inzichtelijk op tekening."
+      ]
+    },
+    "bbl_energie": {
+      "titel": "Besluit bouwwerken leefomgeving (Bbl) - energie en duurzaamheid",
+      "wettelijke_basis": "Bbl afdeling 4.4 / 5.2",
+      "kernpunten": [
+        "Nieuwbouw moet voldoen aan BENG-eisen (Bijna EnergieNeutraal Gebouw).",
+        "Toon de energieprestatie aan met een BENG-berekening.",
+        "Houd rekening met eisen aan oververhitting (TOjuli) en milieuprestatie (MPG)."
+      ],
+      "veelgemaakte_fouten": [
+        "Geen BENG-berekening bijgevoegd bij nieuwbouw.",
+        "MPG-berekening vergeten."
+      ]
+    },
+    "bal_milieu": {
+      "titel": "Besluit activiteiten leefomgeving (Bal) - milieubelastende activiteiten",
+      "wettelijke_basis": "Bal",
+      "kernpunten": [
+        "Bepaal of de activiteit vergunningplichtig of meldingplichtig is onder het Bal.",
+        "Beschrijf emissies (geluid, geur, lucht), opslag van stoffen en afvalstromen.",
+        "Houd rekening met de best beschikbare technieken (BBT)."
+      ],
+      "veelgemaakte_fouten": [
+        "Onvolledige beschrijving van emissies en bedrijfsprocessen.",
+        "Geen toets aan best beschikbare technieken."
+      ]
+    },
+    "natuur_stikstof": {
+      "titel": "Natuur - stikstofdepositie",
+      "wettelijke_basis": "Omgevingswet (natuur), AERIUS",
+      "kernpunten": [
+        "Bij activiteiten nabij Natura 2000-gebieden is een AERIUS-stikstofberekening nodig.",
+        "Bij relevante depositie kan een natuurvergunning vereist zijn."
+      ],
+      "veelgemaakte_fouten": [
+        "Stikstofeffecten niet onderzocht.",
+        "Geen AERIUS-berekening bij bouw of milieuactiviteit nabij beschermd gebied."
+      ]
+    },
+    "natuur_soortenbescherming": {
+      "titel": "Natuur - soortenbescherming",
+      "wettelijke_basis": "Omgevingswet (natuur)",
+      "kernpunten": [
+        "Onderzoek of beschermde soorten (bv. vleermuizen, broedvogels) aanwezig zijn.",
+        "Houd rekening met het broedseizoen bij kap- en sloopwerkzaamheden."
+      ],
+      "veelgemaakte_fouten": [
+        "Geen ecologische quickscan bij kappen of slopen.",
+        "Werkzaamheden gepland in het broedseizoen zonder onderbouwing."
+      ]
+    },
+    "erfgoed_monumenten": {
+      "titel": "Erfgoed - monumenten",
+      "wettelijke_basis": "Omgevingswet (erfgoed)",
+      "kernpunten": [
+        "Wijzigingen aan een monument moeten de monumentale waarden respecteren.",
+        "Lever een cultuurhistorische onderbouwing en (zo nodig) bouwhistorisch onderzoek aan.",
+        "Beschrijf welke materialen en technieken worden toegepast."
+      ],
+      "veelgemaakte_fouten": [
+        "Onvoldoende onderbouwing van het effect op monumentale waarden.",
+        "Geen materiaal- en kleurenstaat."
+      ]
+    }
+  }
+}
