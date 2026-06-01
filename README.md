@@ -132,6 +132,30 @@ curl -X POST http://127.0.0.1:8000/api/check \
 
 ---
 
+## Lokale richtlijnen per gemeente
+
+`data/richtlijnen_lokaal.json` bevat per gemeente een profiel. Voor **gemeente
+Ede** zijn echte, gepubliceerde richtlijnen verwerkt (met bronvermelding in het
+`bronnen`-veld), o.a.:
+
+- **Omgevingsplan/-visie** — Omgevingsplan Ede + tijdelijk deel; Omgevingsvisie
+  "Dierbaar. Duurzaam. Dynamisch.".
+- **Welstand** — Commissie Ruimtelijke Kwaliteit; niveaus *bijzonder* / *soepel*
+  / *welstandsvrij*; beeldkwaliteitsplannen.
+- **Bomen/kappen** — vergunning vanaf stamomtrek 80 cm én bij monumentale/
+  waardevolle bomen of bomen in een groenstructuur; herplantplicht of storting
+  in het **Bomenfonds Ede** (≈ €1.000–€4.500).
+- **Erfgoed** — 200+ rijks- en 350+ gemeentelijke monumenten; Erfgoedkamer;
+  Erfgoedverordening Ede; Cultuurhistorische Waardenkaart.
+- **Stikstof/Veluwe** — Natura 2000; provinciaal voorbereidingsbesluit stikstof
+  (500 m-zone); AERIUS-berekening en natuurvergunning provincie Gelderland.
+
+Bronnen staan in het profiel (`ede.nl`, `lokaleregelgeving.overheid.nl`,
+`gelderland.nl`).
+
+> De andere gemeenten (Amsterdam, Rotterdam, Utrecht) en de historische dataset
+> zijn voorbeeld-/demodata.
+
 ## Eigen richtlijnen of historie toevoegen
 
 De kennisbank zit volledig in `data/`. Voeg activiteiten, gemeenten,

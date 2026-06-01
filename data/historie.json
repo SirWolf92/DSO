@@ -30,6 +30,15 @@
     {"id": "H027", "activiteit": "reclame", "gemeente": "Amsterdam", "bouwkosten": 5000, "vooroverleg": false, "uitkomst": "geweigerd", "reden": "Lichtreclame in binnenstad in strijd met reclamebeleid."},
     {"id": "H028", "activiteit": "reclame", "gemeente": "Rotterdam", "bouwkosten": 4000, "vooroverleg": false, "uitkomst": "verleend", "reden": "Paste binnen reclamekader."},
     {"id": "H029", "activiteit": "reclame", "gemeente": "Utrecht", "bouwkosten": 3500, "vooroverleg": false, "uitkomst": "verleend", "reden": "Sobere uitvoering, akkoord."},
-    {"id": "H030", "activiteit": "reclame", "gemeente": "Overige gemeente", "bouwkosten": 3000, "vooroverleg": false, "uitkomst": "geweigerd", "reden": "Geen ontwerptekening met maatvoering."}
+    {"id": "H030", "activiteit": "reclame", "gemeente": "Overige gemeente", "bouwkosten": 3000, "vooroverleg": false, "uitkomst": "geweigerd", "reden": "Geen ontwerptekening met maatvoering."},
+    {"id": "H031", "activiteit": "bouw_omgevingsplan", "gemeente": "Ede", "bouwkosten": 55000, "vooroverleg": true, "uitkomst": "verleend", "reden": "Paste binnen omgevingsplan; vergunningcheck en goede onderbouwing."},
+    {"id": "H032", "activiteit": "bouw_omgevingsplan", "gemeente": "Ede", "bouwkosten": 90000, "vooroverleg": false, "uitkomst": "geweigerd", "reden": "Strijd met welstand in 'bijzonder' gebied (beeldkwaliteit)."},
+    {"id": "H033", "activiteit": "bouw_omgevingsplan", "gemeente": "Ede", "bouwkosten": 40000, "vooroverleg": true, "uitkomst": "verleend", "reden": "Duurzaam ontwerp passend bij Omgevingsvisie."},
+    {"id": "H034", "activiteit": "kappen", "gemeente": "Ede", "bouwkosten": 0, "vooroverleg": false, "uitkomst": "geweigerd", "reden": "Monumentale boom; geen herplant en geen storting Bomenfonds aangeboden."},
+    {"id": "H035", "activiteit": "kappen", "gemeente": "Ede", "bouwkosten": 0, "vooroverleg": false, "uitkomst": "verleend", "reden": "Boom in slechte conditie; herplant op eigen terrein aangeboden."},
+    {"id": "H036", "activiteit": "kappen", "gemeente": "Ede", "bouwkosten": 0, "vooroverleg": false, "uitkomst": "geweigerd", "reden": "Kap gepland in broedseizoen zonder ecologische quickscan."},
+    {"id": "H037", "activiteit": "milieu", "gemeente": "Ede", "bouwkosten": 280000, "vooroverleg": false, "uitkomst": "geweigerd", "reden": "Geen AERIUS-berekening; activiteit binnen 500m-zone Veluwe."},
+    {"id": "H038", "activiteit": "milieu", "gemeente": "Ede", "bouwkosten": 200000, "vooroverleg": true, "uitkomst": "verleend", "reden": "AERIUS toonde geen relevante stikstofdepositie aan."},
+    {"id": "H039", "activiteit": "monument", "gemeente": "Ede", "bouwkosten": 85000, "vooroverleg": true, "uitkomst": "verleend", "reden": "Cultuurhistorische onderbouwing; Erfgoedkamer akkoord."}
   ]
 }

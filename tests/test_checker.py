@@ -97,3 +97,33 @@ def test_api_index_serveert_html():
     r = client.get("/")
     assert r.status_code == 200
     assert "DSO" in r.text
+
+
+# --- Gemeente Ede (echte richtlijnen) ---
+
+
+def test_ede_is_beschikbare_gemeente():
+    from app.knowledge import gemeente_namen
+
+    assert "Ede" in gemeente_namen()
+
+
+def test_ede_richtlijnen_bevatten_veluwe_en_bomenfonds():
+    from app.knowledge import relevante_richtlijnen_tekst
+
+    txt = relevante_richtlijnen_tekst(["milieu", "kappen"], "Ede")
+    assert "Veluwe" in txt  # Natura 2000 / stikstof
+    assert "Bomenfonds" in txt  # Ede-specifieke herplantregeling
+
+
+def test_ede_kappen_geeft_gemeente_specifieke_historie():
+    aanvraag = Aanvraag(
+        aanvrager=Aanvrager(naam="Test"),
+        locatie=Locatie(adres="Bergstraat 1", postcode="6711 AA", gemeente="Ede"),
+        activiteiten=["kappen"],
+        omschrijving="Het vellen van een dode eik in de voortuin met herplant ter plaatse.",
+        bijlagen=["situatietekening", "foto_boom"],
+    )
+    res = check(aanvraag)
+    assert res.historische_context.aantal_vergelijkbaar >= 3
+    assert "gemeente" in res.historische_context.toelichting

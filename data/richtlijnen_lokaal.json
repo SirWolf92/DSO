@@ -85,6 +85,54 @@
         ]
       }
     },
+    "Ede": {
+      "accent": "Gemeente op de rand van de Veluwe (Natura 2000). Omgevingsvisie 'Dierbaar. Duurzaam. Dynamisch.' met sterke nadruk op natuur, stikstof, bomen en ruimtelijke kwaliteit.",
+      "bronnen": [
+        "https://www.ede.nl/in-de-gemeente-ede/omgevingswet/omgevingsplan-ede",
+        "https://www.ede.nl/aanvragen-en-regelen/boom-kappen",
+        "https://www.ede.nl/aanvragen-en-regelen/welstandsadvies",
+        "https://www.ede.nl/aanvragen-en-regelen/monument-opknappen-of-verbouwen",
+        "https://lokaleregelgeving.overheid.nl/CVDR696227 (Omgevingsplan Ede)",
+        "https://lokaleregelgeving.overheid.nl/CVDR296244/1 (Nadere regel kappen bomen Ede)",
+        "https://lokaleregelgeving.overheid.nl/CVDR640855/1 (Nadere regel Bomenfonds Ede 2020)",
+        "https://lokaleregelgeving.overheid.nl/CVDR139903/1 (Erfgoedverordening Ede)",
+        "https://www.gelderland.nl/vergunningen/vergunning-natura-2000-gebied"
+      ],
+      "richtlijnen": {
+        "omgevingsplan": [
+          "Toets aan het Omgevingsplan Ede; tot de volledige herziening geldt deels het tijdelijke omgevingsplan (van rechtswege) met oude bestemmingsplannen en verordeningen.",
+          "De Omgevingsvisie Ede 'Dierbaar. Duurzaam. Dynamisch.' stuurt op duurzaamheid, natuur en zorgvuldig ruimtegebruik; onderbouw hoe je plan hieraan bijdraagt.",
+          "Doe vooraf de vergunningcheck in het Omgevingsloket: veel kleine bouwwerken zijn vergunningvrij."
+        ],
+        "welstand": [
+          "De Commissie Ruimtelijke Kwaliteit Ede (Welstandskamer) adviseert over welstand en beeldkwaliteit.",
+          "Ede kent drie welstandsniveaus: 'bijzonder' (beeldbepalende/waardevolle gebieden, strenge toets), een soepel niveau voor reguliere woonwijken, en welstandsvrije gebieden.",
+          "Voor specifieke ontwikkelingen kan een beeldkwaliteitsplan met aanvullende criteria gelden."
+        ],
+        "omgevingsplan_groen": [
+          "Een omgevingsvergunning voor het vellen is nodig vanaf een stamomtrek van 80 cm, en als de boom monumentaal of waardevol is of in een groenstructuur staat.",
+          "Monumentale en waardevolle bomen staan op de gemeentelijke bomenlijst / Cultuurhistorische Waardenkaart; controleer dit vooraf.",
+          "Bij kap geldt herplantplicht; kan dat niet op eigen terrein, dan een storting in het Bomenfonds Ede (ca. EUR 1.000-4.500 afhankelijk van de stamomtrek).",
+          "Houd rekening met soortenbescherming (broedseizoen, vleermuizen) gezien de nabijheid van natuur."
+        ],
+        "verkeersveiligheid": [
+          "Een uitweg moet verkeersveilig zijn en mag openbaar groen en bestaande (waardevolle) bomen niet onevenredig aantasten."
+        ],
+        "reclamebeleid": [
+          "Reclame-uitingen worden getoetst aan de welstandscriteria; in 'bijzondere' gebieden en het centrum gelden strengere eisen."
+        ],
+        "erfgoedverordening": [
+          "Ede heeft ruim 200 rijksmonumenten en meer dan 350 gemeentelijke monumenten; de Erfgoedkamer van de Commissie Ruimtelijke Kwaliteit adviseert.",
+          "Werk aan een monument is vergunningplichtig, behalve normaal onderhoud waarbij detaillering, profilering, vormgeving, materiaal en kleur niet wijzigen (Erfgoedverordening Ede).",
+          "Raadpleeg de Cultuurhistorische Waardenkaart en de 'Leidraad Monumenten opknappen & instandhouden gemeente Ede'."
+        ],
+        "omgevingsplan_milieu": [
+          "Ede grenst aan Natura 2000-gebied de Veluwe; stikstofdepositie is een kritische factor.",
+          "Binnen de 500-meterzone rond de Veluwe geldt het provinciale voorbereidingsbesluit stikstof (Gelderland): nieuwe of uitgebreide activiteiten met stikstofdepositie zijn in beginsel niet toegestaan zonder vergunning, met enkele uitzonderingen.",
+          "Maak tijdig een AERIUS-berekening; bij relevante depositie is een natuurvergunning van de provincie Gelderland nodig."
+        ]
+      }
+    },
     "Overige gemeente": {
       "accent": "Algemeen model voor gemeenten zonder specifiek profiel.",
       "richtlijnen": {
