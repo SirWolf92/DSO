@@ -39,6 +39,15 @@
     {"id": "H036", "activiteit": "kappen", "gemeente": "Ede", "bouwkosten": 0, "vooroverleg": false, "uitkomst": "geweigerd", "reden": "Kap gepland in broedseizoen zonder ecologische quickscan."},
     {"id": "H037", "activiteit": "milieu", "gemeente": "Ede", "bouwkosten": 280000, "vooroverleg": false, "uitkomst": "geweigerd", "reden": "Geen AERIUS-berekening; activiteit binnen 500m-zone Veluwe."},
     {"id": "H038", "activiteit": "milieu", "gemeente": "Ede", "bouwkosten": 200000, "vooroverleg": true, "uitkomst": "verleend", "reden": "AERIUS toonde geen relevante stikstofdepositie aan."},
-    {"id": "H039", "activiteit": "monument", "gemeente": "Ede", "bouwkosten": 85000, "vooroverleg": true, "uitkomst": "verleend", "reden": "Cultuurhistorische onderbouwing; Erfgoedkamer akkoord."}
+    {"id": "H039", "activiteit": "monument", "gemeente": "Ede", "bouwkosten": 85000, "vooroverleg": true, "uitkomst": "verleend", "reden": "Cultuurhistorische onderbouwing; Erfgoedkamer akkoord."},
+    {"id": "H040", "activiteit": "dakkapel", "gemeente": "Ede", "bouwkosten": 9000, "vooroverleg": false, "uitkomst": "verleend", "reden": "Dakkapel op achterdakvlak, paste binnen de regels."},
+    {"id": "H041", "activiteit": "dakkapel", "gemeente": "Amsterdam", "bouwkosten": 12000, "vooroverleg": false, "uitkomst": "geweigerd", "reden": "Dakkapel op voordakvlak in beschermd stadsgezicht; strijd met welstand."},
+    {"id": "H042", "activiteit": "dakkapel", "gemeente": "Utrecht", "bouwkosten": 10000, "vooroverleg": false, "uitkomst": "verleend", "reden": "Sobere uitvoering passend bij straatbeeld."},
+    {"id": "H043", "activiteit": "dakkapel", "gemeente": "Overige gemeente", "bouwkosten": 8500, "vooroverleg": false, "uitkomst": "geweigerd", "reden": "Onvolledige tekeningen (geen gevelaanzicht)."},
+    {"id": "H044", "activiteit": "bijgebouw", "gemeente": "Ede", "bouwkosten": 15000, "vooroverleg": false, "uitkomst": "verleend", "reden": "Tuinhuis binnen toegestane oppervlakte en hoogte."},
+    {"id": "H045", "activiteit": "bijgebouw", "gemeente": "Overige gemeente", "bouwkosten": 22000, "vooroverleg": false, "uitkomst": "geweigerd", "reden": "Overschrijding van het toegestane bebouwingspercentage achtererf."},
+    {"id": "H046", "activiteit": "zonnepanelen", "gemeente": "Amsterdam", "bouwkosten": 7000, "vooroverleg": false, "uitkomst": "geweigerd", "reden": "Panelen zichtbaar op een monument; strijd met monumentale waarden."},
+    {"id": "H047", "activiteit": "zonnepanelen", "gemeente": "Overige gemeente", "bouwkosten": 6000, "vooroverleg": false, "uitkomst": "verleend", "reden": "Vergunningvrij bevonden; geen bezwaren."},
+    {"id": "H048", "activiteit": "erfafscheiding", "gemeente": "Overige gemeente", "bouwkosten": 2000, "vooroverleg": false, "uitkomst": "verleend", "reden": "Schutting binnen de maximale hoogte."}
   ]
 }

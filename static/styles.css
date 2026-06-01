@@ -147,6 +147,17 @@ textarea { resize: vertical; }
 }
 .bijlage-groep { font-size: 0.78rem; font-weight: 700; color: var(--navy); text-transform: uppercase; letter-spacing: 0.4px; margin: 12px 0 2px; }
 .bijlage-groep:first-child { margin-top: 0; }
+.groep-titel { font-size: 0.78rem; font-weight: 700; color: var(--navy); text-transform: uppercase; letter-spacing: 0.4px; margin: 14px 0 4px; }
+.groep-titel:first-child { margin-top: 0; }
+.check-item .badge-vrij {
+  font-size: 0.68rem; font-weight: 700; text-transform: uppercase;
+  color: var(--ok); background: var(--ok-bg);
+  padding: 2px 7px; border-radius: 999px; margin-left: 6px;
+}
+.check-item .ci-hint {
+  font-size: 0.8rem; color: var(--teal-dark); margin-top: 5px;
+  background: #eef7f6; border-radius: 6px; padding: 6px 9px;
+}
 .leeg { color: var(--muted); font-style: italic; font-size: 0.9rem; }
 
 /* Acties */

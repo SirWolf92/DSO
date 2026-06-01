@@ -48,24 +48,35 @@ function renderGemeenten() {
   }
 }
 
+const GROEPEN = [
+  { cat: "particulier", titel: "Voor bewoners (veelvoorkomend)" },
+  { cat: "beide", titel: "Bouwen / verbouwen" },
+  { cat: "zakelijk", titel: "Zakelijk" },
+];
+
+function activiteitItem(act) {
+  const cb = el("input", { type: "checkbox", value: act.code });
+  cb.addEventListener("change", renderBijlagen);
+
+  const titelRij = el("div", { className: "ci-titel", textContent: act.naam });
+  if (act.vergunningvrij_mogelijk)
+    titelRij.append(el("span", { className: "badge-vrij", textContent: "vaak vergunningvrij" }));
+
+  const body = el("div", {}, titelRij, el("div", { className: "ci-sub", textContent: act.toelichting }));
+  if (act.vergunningcheck_hint)
+    body.append(el("div", { className: "ci-hint", textContent: act.vergunningcheck_hint }));
+
+  return el("label", { className: "check-item" }, cb, body);
+}
+
 function renderActiviteiten() {
   const lijst = $("#activiteiten-lijst");
   lijst.innerHTML = "";
-  for (const act of META.activiteiten) {
-    const cb = el("input", { type: "checkbox", value: act.code });
-    cb.addEventListener("change", renderBijlagen);
-    const label = el(
-      "label",
-      { className: "check-item" },
-      cb,
-      el(
-        "div",
-        {},
-        el("div", { className: "ci-titel", textContent: act.naam }),
-        el("div", { className: "ci-sub", textContent: act.toelichting })
-      )
-    );
-    lijst.append(label);
+  for (const groep of GROEPEN) {
+    const items = META.activiteiten.filter((a) => (a.categorie || "beide") === groep.cat);
+    if (items.length === 0) continue;
+    lijst.append(el("div", { className: "groep-titel", textContent: groep.titel }));
+    for (const act of items) lijst.append(activiteitItem(act));
   }
 }
 
@@ -309,26 +320,23 @@ function renderResultaat(r) {
 }
 
 function vulVoorbeeld() {
-  $("#aanvrager-naam").value = "Bouwbedrijf De Vries B.V.";
-  $("#aanvrager-type").value = "bedrijf";
-  $("#kvk-wrap").classList.remove("hidden");
-  $("#aanvrager-kvk").value = "12345678";
-  $("#loc-adres").value = "Keizersgracht 123";
-  $("#loc-postcode").value = "1015 CJ";
-  $("#loc-gemeente").value = "Amsterdam";
-  $("#loc-kadaster").value = "AMS00 B 4567";
+  // Voorbeeld van een particulier/bewoner: een dakkapel.
+  $("#aanvrager-naam").value = "Familie Jansen";
+  $("#aanvrager-type").value = "particulier";
+  $("#kvk-wrap").classList.add("hidden");
+  $("#aanvrager-kvk").value = "";
+  $("#loc-adres").value = "Bergstraat 12";
+  $("#loc-postcode").value = "6711 AA";
+  $("#loc-gemeente").value = "Ede";
+  $("#loc-kadaster").value = "";
   $("#omschrijving").value =
-    "Het plaatsen van een dakopbouw van circa 18 m² op een bestaand pand, " +
-    "uitgevoerd in baksteen passend bij de bestaande gevel.";
-  $("#bouwkosten").value = "65000";
+    "Het plaatsen van een dakkapel van circa 3 meter breed op het achterdakvlak " +
+    "van onze woning, om de zolder als slaapkamer te kunnen gebruiken.";
+  $("#bouwkosten").value = "9000";
   $("#vooroverleg").checked = false;
 
-  // Selecteer een bouwactiviteit
-  const cb = document.querySelector('#activiteiten-lijst input[value="bouw_omgevingsplan"]');
-  if (cb) {
-    cb.checked = true;
-    renderBijlagen();
-  }
+  const cb = document.querySelector('#activiteiten-lijst input[value="dakkapel"]');
+  if (cb) cb.checked = true;
   // Vink één verplichte bijlage aan, laat de rest open om de check te demonstreren.
   gekozenBijlagen.clear();
   gekozenBijlagen.add("situatietekening");

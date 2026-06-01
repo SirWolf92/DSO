@@ -116,6 +116,31 @@ def test_ede_richtlijnen_bevatten_veluwe_en_bomenfonds():
     assert "Bomenfonds" in txt  # Ede-specifieke herplantregeling
 
 
+def test_particulier_dakkapel_geeft_vergunningcheck_en_geen_kvk_waarschuwing():
+    aanvraag = Aanvraag(
+        aanvrager=Aanvrager(naam="Familie Jansen", type="particulier"),
+        locatie=Locatie(adres="Bergstraat 12", postcode="6711 AA", gemeente="Ede"),
+        activiteiten=["dakkapel"],
+        omschrijving="Een dakkapel van circa 3 meter breed op het achterdakvlak "
+        "om de zolder als slaapkamer te gebruiken.",
+        bouwkosten=9000,
+        bijlagen=["situatietekening", "plattegronden_gevels_doorsneden", "foto_bestaande_situatie"],
+    )
+    res = check(aanvraag)
+    # Plain-language vergunningcheck-bevinding aanwezig.
+    assert any(b.categorie == "Vergunningcheck" for b in res.bevindingen)
+    # Particulier zonder KvK krijgt GEEN KvK-waarschuwing.
+    assert not any("KvK" in b.bericht for b in res.bevindingen)
+
+
+def test_particuliere_activiteiten_aanwezig_in_meta():
+    r = client.get("/api/meta")
+    codes = {a["code"] for a in r.json()["activiteiten"]}
+    assert {"dakkapel", "bijgebouw", "zonnepanelen", "erfafscheiding"} <= codes
+    # Activiteiten hebben een categorie voor groepering in de UI.
+    assert all("categorie" in a for a in r.json()["activiteiten"])
+
+
 def test_ede_kappen_geeft_gemeente_specifieke_historie():
     aanvraag = Aanvraag(
         aanvrager=Aanvrager(naam="Test"),

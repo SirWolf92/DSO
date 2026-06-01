@@ -110,6 +110,25 @@ def controleer(aanvraag: Aanvraag) -> list[Bevinding]:
             )
         )
 
+    # --- Mogelijk vergunningvrij (vooral voor particulieren) ---
+    for code in aanvraag.activiteiten:
+        act = idx.get(code)
+        if not act or not act.get("vergunningvrij_mogelijk"):
+            continue
+        hint = act.get("vergunningcheck_hint", "")
+        bevindingen.append(
+            Bevinding(
+                severity=Severity.INFO,
+                categorie="Vergunningcheck",
+                bericht=(
+                    f"Mogelijk vergunningvrij: '{act['naam']}'. {hint} "
+                    "Doe de vergunningcheck in het Omgevingsloket; is het vergunningvrij, "
+                    "dan hoef je niets aan te vragen."
+                ).strip(),
+                bron="ow_algemeen",
+            )
+        )
+
     # --- Bijlagen per activiteit ---
     aanwezig = set(aanvraag.bijlagen)
     for code in aanvraag.activiteiten:
