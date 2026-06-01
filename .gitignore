@@ -16,3 +16,6 @@ env/
 *.swp
 .idea/
 .vscode/
+
+# Gegenereerde preview-artefacten
+preview.html
